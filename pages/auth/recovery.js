@@ -11,7 +11,7 @@ export default function Recovery({showFlashFunc, fetchController}) {
 
   const recovery = async () => {
     try {
-      const res = await fetch("http://127.0.0.1:8000/admin/forgot_password", {
+      const res = await fetch("https://church-database-backend.onrender.com/admin/forgot_password", {
         method: "POST",
         headers: {
           'Content-Type': 'application/json',

@@ -39,7 +39,12 @@ export const getStaticProps = async (context) => {
       props: { baptism: data }
     }
   }
-  catch (error) {}
+  catch (error) {
+    return {
+      props: { baptism: {} },
+      notFound: true
+    };
+  }
 }
 
 
